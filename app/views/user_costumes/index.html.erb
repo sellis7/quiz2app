@@ -1,2 +1,36 @@
-<h1>UserCostumes#index</h1>
-<p>Find me in app/views/user_costumes/index.html.erb</p>
+<div>
+	<%= image_tag 'Raven1.jpg', :class => 'center raven', :alt => 'raven', :title => 'Nevermore' %>
+</div>
+<div class="content">
+	<p>
+		Then this ebony bird beguiling my sad fancy into smiling,
+		By the grave and stern decorum of the countenance it wore,
+		“Though thy crest be shorn and shaven, thou,” I said, “art sure no craven,
+		Ghastly grim and ancient Raven wandering from the Nightly shore—
+		Tell me what thy lordly name is on the Night’s Plutonian shore!”
+	</p>
+	<br />
+	<br />
+	<p>
+		… Quoth the Raven “Nevermore.”
+	</p>
+	<div id="trick">
+		<div id="msg">
+			<h1>Happy Halloween</h1>
+		</div>
+		<div id="eap">
+			<%= image_tag 'eap.jpeg', :class => 'center poe', :alt => 'Edgar Allan Poe', :title => 'E. A. Poe' %>
+		</div>
+</div>
+
+<div>
+<%= simple_form_for @user_costume do |f| %>
+	<fieldset class="my-form">
+	  <%= f.input :costume, label: 'What was your favorite Halloween costume?', input_html: {class: 'wide-field'} %>
+		<br />
+	  <%= f.input :year, label: 'What year was that?', placeholder: 'ex. 1991', input_html: {class: 'wide-field'} %>
+		<br />
+	  <%= f.button :submit, "Submit" %>
+	</fieldset>
+<% end %>
+</div>

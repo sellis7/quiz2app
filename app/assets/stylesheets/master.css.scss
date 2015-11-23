@@ -1,0 +1,107 @@
+* {
+	margin: 0;
+}
+body{
+	width: 100%;
+	background-color: #313598;
+}
+.container {
+	margin: 0 auto;
+	width: 80%;
+	padding: 25px 0;
+	background-color: #f5f6f6;
+}
+
+.center { 		// new trick, since link_to & img_tag are not a block elements
+	display: block;
+	margin: 0 auto;
+}
+
+.raven{
+	width: 60%;
+}
+
+.poe {
+	width: 45%;
+}
+
+.content {
+	padding: 50px 65px;
+}
+
+p {
+	font-family: 'Cardo', serif;
+	font-size: 1.75em;
+	line-height: 175%;
+}
+
+.my-form {
+	margin-top: 40px;
+	padding: 40px;
+}
+
+.tighter-margin {
+	padding: 25px 15% 50px;
+}
+
+label {
+	display: block;
+	padding-bottom: 8px;
+	font-size: 1.5em;
+}
+
+.wide-field {
+	width: 100%;
+}
+
+.nav {
+	text-align: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0.0);
+    opacity: 0;
+  }
+	60% {
+    transform: scale(0.75);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+	2% {
+    opacity: .25;
+  }
+  100% {
+    opacity: .25;
+  }
+}
+
+#trick {
+	margin-top: 40px;
+}
+#msg {
+	position: absolute;
+	z-index: 1;
+	width: 72%;
+	animation-duration: 8s;
+  animation-name: fadeIn;
+	font-family: 'Cardo', serif;
+	font-weight: bolder;
+	font-size: 3.25em;
+	text-align: center;
+	color: #cf4f00;
+}
+
+#eap {
+	animation-duration: 1000s;
+  animation-name: fadeOut;
+}
